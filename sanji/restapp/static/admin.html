@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAST BLUE - Administration</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+            background-color: #1e1e2f;
+            line-height: 1.6;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0d0d0e, #2575fc);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            color: #076ab1;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #07090a;
+        }
+
+        .admin-container {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .admin-container h1 {
+            font-size: 2.8rem;
+            color: #0b5aaa;
+            margin-bottom: 40px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .admin-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .admin-item {
+            background: #282845;
+            border-radius: 15px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: left;
+        }
+
+        .admin-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-bottom: 5px solid #1163b0;
+        }
+
+        .admin-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        .admin-details {
+            padding: 20px;
+        }
+
+        .admin-details h3 {
+            font-size: 1.5rem;
+            color: #0b80b2;
+            margin-bottom: 10px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .admin-details p {
+            font-size: 1rem;
+            color: #d3d3e7;
+        }
+
+        footer {
+            background: linear-gradient(135deg, #0e0e0f, #2575fc);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #0a8fb4;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #66ccff;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .admin-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .admin-item {
+                width: 100%;
+            }
+
+            header nav a {
+                font-size: 0.9rem;
+                margin: 0 5px;
+            }
+
+            .admin-container h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>EAST BLUE</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="admin-container">
+        <h1>Meet Our Leadership Team</h1>
+        <div class="admin-items">
+            <div class="admin-item">
+                <img src="WhatsApp Image 2024-12-13 at 10.41.39 PM.jpeg" alt="CEO">
+                <div class="admin-details">
+                    <h3>Gokul</h3>
+                    <p>CEO of EAST BLUE</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="manager.jpg" alt="Manager">
+                <div class="admin-details">
+                    <h3>VIJAY</h3>
+                    <p>Manager</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="sanji cheff.webp" alt="Master Chef">
+                <div class="admin-details">
+                    <h3>sANJI</h3>
+                    <p>Master Chef</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="ass manager.avif" alt="Assistant Managing Director">
+                <div class="admin-details">
+                    <h3>Rasmika</h3>
+                    <p>Assistant Managing Director</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EAST BLUE. All rights reserved. | <a href="home.html">Back to Home</a></p>
+    </footer>
+
+</body>
+
+</html>
